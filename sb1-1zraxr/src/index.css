@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-teal-400 bg-clip-text text-transparent;
+  }
+
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, #00ffff 1px, transparent 1px),
+      linear-gradient(to bottom, #00ffff 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
